@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action = "register">
+            Select Action required:
+            <select name="action" required>
+                <option value="">Choose it here!</option>
+                <option value="default">(1) => Load default list</option>
+                <option value="source">(2) => Load data from other source</option>
+                <option value="check">(3) => Check data for specified company</option>
+
+            </select>
+            <input type="submit" value="Execute" />
+            <p>Fill the below fields when checking a company data</p>
+            Company Name: <input type="text" name="company"/>
+            <p></p>
+            Zip Code (5 digits): <input type="text" name="zip">
+            <p>It depending on chosen action, 1 or 2, please specify path to file "default list" or "data from other source"</p>
+            File Path (e.g. c:\users\jajo\file.csv): <input type="text" name="filepath"/>
+        </form>
+   
+    </body>
+</html>
+
